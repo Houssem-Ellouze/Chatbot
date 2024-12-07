@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Powered By HE</title>
+    <link rel="stylesheet" type="text/css" href="chatbot.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body class="show-chatbot">
+
+<button class="chatbot-toggler">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+</button>
+
+<div class="chatbot">
+    <header>
+        <h2>ChatBot</h2>
+    </header>
+    <ul class="chatbox">
+        <li class="chat incoming">
+
+            <span class="material-symbols-outlined">person</span>
+            <p>Hi there! How can I help you today?</p>
+
+        </li>
+    </ul>
+    <div class="chat-input">
+        <textarea id="chat-input" placeholder="Enter a message ......" required></textarea>
+        <span id="send-btn" class="material-symbols-outlined">Send</span>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@0.21.0/dist/index.min.js"></script>
+<script src="chatbot.js"></script>
+
+</body>
+</html>
